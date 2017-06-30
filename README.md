@@ -78,6 +78,10 @@ The `bar-buttons` div also has `active` and `disabled` classes which make a butt
 </div>
 ```
 
+<div style="text-align:center">
+	<img src ="https://i.imgur.com/dGTgqHj.png" alt="title-bar">
+</div>
+
 #### Sidebar
 
 The `sidebar` div gets shown on the left side of the window. This is used to display a list of elements, similar to the Finder
@@ -171,6 +175,10 @@ Each `item` div inside the `items` div, must have the class `item`, as well as a
 </div>
 ```
 
+<div style="text-align:center">
+	<img src ="https://i.imgur.com/gfjOOXp.png" alt="mos">
+</div>
+
 #### Table
 
 A table can be displayed by using the HTML `table` element with the class `table`. If you want each row to have alternating background colours, add the `alt` class as shown below
@@ -209,3 +217,7 @@ A table can be displayed by using the HTML `table` element with the class `table
 	</tr>
 </table>
 ```
+
+<div style="text-align:center">
+	<img src ="https://i.imgur.com/k84EVDw.png" alt="mos">
+</div>
