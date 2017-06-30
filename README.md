@@ -1,30 +1,29 @@
-# Mos 
-###### (mac operating system)
+# Ion 
 
-A lightweight (11kb minified, 13kb un-minified) CSS framework that brings MacOS styled elements to Electron.
+A lightweight CSS framework that brings MacOS styled elements to Electron.
 
 ### About
 
-Mos was developed with the aim of bringing native MacOS elements and components, such as buttons, sidebars, search inputs, tables, icons, and toolbars, to HTML and CSS. 
+Ion was developed with the aim of bringing native MacOS elements and components, such as buttons, sidebars, search inputs, tables, icons, and toolbars, to HTML and CSS. 
 
-Mos is designed to be used specifically within an [Electron](https://github.com/electron/electron) application, but can be used just fine in a normal HTML page.
+Ion is designed to be used specifically within an [Electron](https://github.com/electron/electron) application, but can be used just fine in a normal HTML page.
 
 ### Getting Started
 
-- Run `git clone https://github.com/LukaKerr/mos.git` to get the source code
+- Run `git clone https://github.com/LukaKerr/Ion.git` to get the source code
 
 
 ### Folder Structure
 
 ```
-mos/
+Ion/
 ├── README.md
 ├── index.html
 ├── css/
-│   ├── mos.css
-│   └── mos.min.css
+│   ├── ion.css
+│   └── ion.min.css
 ├── fonts/
-│   └── mos.ttf
+│   └── ion.ttf
 └── img/
     ├── search.png
     └── sidebar/
@@ -34,7 +33,7 @@ mos/
 ### Screenshot
 
 <div style="text-align:center">
-	<img src ="https://i.imgur.com/tUBrODR.png" alt="mos">
+	<img src ="https://i.imgur.com/tUBrODR.png" alt="ion">
 </div>
 
 ### Documentation
@@ -59,7 +58,7 @@ The `bar-buttons` div also has `active` and `disabled` classes which make a butt
 		<button></button>
 		<button></button>
 	</div>
-	<div class="title">mos</div>
+	<div class="title">ion</div>
 
 	<div class="bar-buttons">
 		<button class="btn left-open-big"></button>
@@ -176,7 +175,7 @@ Each `item` div inside the `items` div, must have the class `item`, as well as a
 ```
 
 <div style="text-align:center">
-	<img src ="https://i.imgur.com/gfjOOXp.png" alt="mos">
+	<img src ="https://i.imgur.com/gfjOOXp.png" alt="ion">
 </div>
 
 #### Table
@@ -192,7 +191,7 @@ A table can be displayed by using the HTML `table` element with the class `table
 		<th>Kind</th>
 	</tr>
 	<tr>
-		<td>mos.css</td>
+		<td>ion.css</td>
 		<td>Today 3:33 pm</td>
 		<td>100 KB</td>
 		<td>CSS</td>
@@ -219,5 +218,5 @@ A table can be displayed by using the HTML `table` element with the class `table
 ```
 
 <div style="text-align:center">
-	<img src ="https://i.imgur.com/k84EVDw.png" alt="mos">
+	<img src ="https://i.imgur.com/k84EVDw.png" alt="ion">
 </div>

@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'mos';
-	src: url('../fonts/mos.ttf') format('truetype');
+	font-family: 'ion';
+	src: url('../fonts/ion.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -82,7 +82,7 @@ body, html {
 	border: 0.25px solid #CFCECF;
 	border-radius: 5px;
 	background: -webkit-linear-gradient(#FDFDFD, #ECECEC) !important;
-	font-family: 'mos';
+	font-family: 'ion';
 	padding-top: 4px;
 	font-size: 13px;
 	margin: 0 2px;
