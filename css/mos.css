@@ -282,8 +282,8 @@ body, html {
 	padding-left: 23px;
 	background-image: url('../img/search.png');
 	background-repeat: no-repeat;
-	background-size: 13px;
-	background-position: 117px 5px;
+	background-size: 12px;
+	background-position: 117px 5.5px;
 	opacity: 0.5;
 	transition: background-position 0.4s;
 	font-size: 13px;
@@ -291,7 +291,7 @@ body, html {
 }
 
 .search:focus {
-	background-position: 5px 6px;
+	background-position: 5px 5.5px;
 	transition: background-position 0.25s;
 }
 
@@ -373,7 +373,7 @@ body, html {
 @media screen and (max-width: 900px) {
 	.search {
 		width: 31.6%;
-		background-position: 38.5% 5px;
+		background-position: 38.5% 5.5px;
 	}
 
 	::-webkit-input-placeholder {
@@ -383,7 +383,7 @@ body, html {
 
 @media screen and (max-width: 600px) {
 	.search {
-		background-position: 35.5% 5px;
+		background-position: 35.5% 5.5px;
 	}
 
 	::-webkit-input-placeholder {
