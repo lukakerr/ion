@@ -123,13 +123,30 @@ body, html {
 }
 
 .btn.space {
-	position: relative;
-	top: 2px;
-	margin: 0;
-	width: 19px;
-	margin-top: -2px;
-	background: none !important;
-	border: 1px solid transparent !important;
+	margin-left: 38px;
+}
+
+/* Button Group */
+
+.btn-group {
+	display: inline-block;
+}
+
+.btn-group button:not(:first-child):not(:last-child) {
+	border-radius: 0;
+	margin: -2px;
+}
+
+.btn-group button:first-child {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	margin-right: -2px;
+}
+
+.btn-group button:last-child {
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	margin-left: -2px;
 }
 
 /* Sidebar */
@@ -324,6 +341,7 @@ body, html {
 	height: 20px;
 }
 
+
 .table td:nth-child(3) {
 	width: 110px;
 	text-align: right;
@@ -336,7 +354,7 @@ body, html {
 }
 
 .table tr.disabled {
-
+	color: #A8A8A8;
 }
 
 .table th {

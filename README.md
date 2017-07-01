@@ -42,14 +42,11 @@ Ion/
 
 A title bar can either be normal or tall. Remove the `tall` class below to get a normal title bar. The title bar is used to drag the application.
 
-Inside the `bar` div, there are 4 other main elements:
+Inside the `bar` div, there are 3 other main elements:
 
 - The `buttons` div which is the red, yellow and green buttons in every application
 - The `title` div, which is just the title of your application shown in the title bar
-- The `bar-buttons` div, which lets you add as many buttons as you want to the title bar. These buttons must have the `btn` class, as well as another class to show an icon. Note: the `left-open-big` and `right-open-big` are meant to go next to each other, as back and forward buttons
 - The `search` element, which is simply a search input
-
-The `bar-buttons` div also has `active` and `disabled` classes which make a button active or disabled.
 
 ```
 <div class="bar tall">
@@ -59,26 +56,65 @@ The `bar-buttons` div also has `active` and `disabled` classes which make a butt
 		<button></button>
 	</div>
 	<div class="title">ion</div>
-
-	<div class="bar-buttons">
-		<button class="btn left-open-big"></button>
-		<button class="btn right-open-big"></button>
-		<button class="btn cog"></button>
-		<button class="btn folder disabled"></button>
-		<button class="btn info"></button>
-		<button class="btn space"></button>
-		<button class="btn reply active"></button>
-		<button class="btn download"></button>
-		<button class="btn login"></button>
-		<button class="btn home"></button>
-	</div>
-
 	<input class="search" placeholder="Search">
 </div>
 ```
 
 <div style="text-align:center">
-	<img src ="https://i.imgur.com/dGTgqHj.png" alt="title-bar">
+	<img src ="https://i.imgur.com/XKTfhTB.png" alt="title-bar-tall">
+</div>
+
+<div style="text-align:center">
+	<img src ="https://i.imgur.com/A85Qy3Q.png" alt="title-bar">
+</div>
+
+#### Buttons
+
+Buttons are commonly used in the `bar tall` div. Each button is located within a div with the class `bar-buttons`.
+
+The `bar-buttons` div, lets you add as many buttons as you want to the title bar. These buttons must have the `btn` class, as well as another class to show an icon. Note: the `left-open-big` and `right-open-big` are meant to go next to each other, as back and forward buttons.
+
+The `bar-buttons` div also has `active` and `disabled` classes which make a button active or disabled.
+
+To have a space between buttons, simply add the `space` class to a button.
+
+```
+<div class="bar-buttons">
+	<button class="btn left-open-big"></button>
+	<button class="btn right-open-big"></button>
+	<button class="btn cog"></button>
+	<button class="btn folder disabled"></button>
+	<button class="btn info space"></button>
+	<button class="btn reply active"></button>
+	<button class="btn download"></button>
+	<button class="btn login"></button>
+	<button class="btn home"></button>
+</div>
+```
+
+<div style="text-align:center">
+	<img src ="https://i.imgur.com/qHThSeN.png" alt="bar-buttons">
+</div>
+
+You can also group buttons together, by putting them in a seperate `btn-group` class. 
+
+```
+<div class="btn-group">
+	<button class="btn download"></button>
+	<button class="btn login"></button>
+	<button class="btn cog"></button>
+	<button class="btn folder disabled"></button>
+</div>
+```
+
+<div style="text-align:center">
+	<img src ="https://i.imgur.com/zrksDFR.png" alt="btn-group">
+</div>
+
+Once buttons are combined with the `tall` bar, you will see an output similar to below.
+
+<div style="text-align:center">
+	<img src ="https://i.imgur.com/dGTgqHj.png" alt="btn-group">
 </div>
 
 #### Sidebar
@@ -180,7 +216,9 @@ Each `item` div inside the `items` div, must have the class `item`, as well as a
 
 #### Table
 
-A table can be displayed by using the HTML `table` element with the class `table`. If you want each row to have alternating background colours, add the `alt` class as shown below
+A table can be displayed by using the HTML `table` element with the class `table`. If you want each row to have alternating background colours, add the `alt` class as shown below.
+
+You can also have `disabled` rows, and `active` rows as shown below
 
 ```
 <table class="table alt">
