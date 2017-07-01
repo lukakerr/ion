@@ -6,7 +6,7 @@ A lightweight CSS framework that brings MacOS styled elements to Electron.
 
 Ion was developed with the aim of bringing native MacOS elements and components, such as buttons, sidebars, search inputs, tables, icons, and toolbars, to HTML and CSS. 
 
-Ion is designed to be used specifically within an [Electron](https://github.com/electron/electron) application, but can be used just fine in a normal HTML page.
+Ion is designed to be used specifically within an [Electron](https://github.com/electron/electron) application.
 
 ### Getting Started
 
@@ -33,7 +33,7 @@ Ion/
 ### Screenshot
 
 <div style="text-align:center">
-	<img src ="https://i.imgur.com/tUBrODR.png" alt="ion">
+	<img src ="https://i.imgur.com/LGtDmSf.png" alt="ion">
 </div>
 
 ### Documentation

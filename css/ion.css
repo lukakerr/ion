@@ -89,13 +89,16 @@ body, html {
 	margin-top: 0px;
 }
 
+.bar.inset.tall > .title {
+	visibility: hidden;
+}
+
 /* Traffic Light Buttons */
 
 .buttons {
 	margin-left: 8px;
 	position: relative;
 	top: 1px;
-	margin-top: -4px;
 	width: 56px;
 	z-index: 2;
 }
@@ -205,6 +208,7 @@ body, html {
 	font-size: 13px;
 	margin: 0 2px;
 	color: #737373;
+	outline: none;
 }
 
 .btn:active {
@@ -231,12 +235,8 @@ body, html {
 	height: 22px;
 }
 
-.btn.left-open-big {
-	margin-right: -2px;
-}
-
 .btn.right-open-big {
-	margin-left: -2px;
+	margin-left: -3px;
 	margin-right: 78px;
 }
 
@@ -263,19 +263,19 @@ body, html {
 
 .btn-group button:not(:first-child):not(:last-child) {
 	border-radius: 0;
-	margin: -2px;
+	margin: -2.5px;
 }
 
 .btn-group button:first-child {
 	border-top-right-radius: 0;
 	border-bottom-right-radius: 0;
-	margin-right: -2px;
+	margin-right: -2.5px;
 }
 
 .btn-group button:last-child {
 	border-top-left-radius: 0;
 	border-bottom-left-radius: 0;
-	margin-left: -2px;
+	margin-left: -2.5px;
 }
 
 /* Tabs */
@@ -358,6 +358,48 @@ body, html {
 
 .tab.active {
 	background: -webkit-linear-gradient(#DBD9DB, #D7D5D7);
+}
+
+/* Search */
+
+.search {
+	position: absolute;
+	top: 29px;
+	right: 8px;
+	height: 20px;
+	width: 285px;
+	border-radius: 5px;
+	border: 1px solid #D8D6D8;
+	line-height: 1em;
+	padding-left: 23px;
+	background-image: url('../img/search.png');
+	background-repeat: no-repeat;
+	background-size: 12px;
+	background-position: 117px 5.5px;
+	opacity: 0.5;
+	transition: background-position 0.4s;
+	font-size: 13px;
+	min-width: 125px;
+}
+
+.search:focus {
+	background-position: 5px 5.5px;
+	transition: background-position 0.25s;
+}
+
+.search:focus::-webkit-input-placeholder {
+	padding-left: 0px;
+	transition: all 0.25s;
+}
+
+::-webkit-input-placeholder {
+	position: relative;
+	top: 1px;
+	opacity: 0.8;
+	color: black;
+	font-size: 13px;
+	padding-left: 110px;
+	transition: all 0.4s;
 }
 
 /* Sidebar */
@@ -504,49 +546,6 @@ body, html {
 	color: #A4A4A7;
 }
 
-
-/* Search */
-
-.search {
-	position: absolute;
-	top: 29px;
-	right: 8px;
-	height: 20px;
-	width: 285px;
-	border-radius: 5px;
-	border: 1px solid #D8D6D8;
-	line-height: 1em;
-	padding-left: 23px;
-	background-image: url('../img/search.png');
-	background-repeat: no-repeat;
-	background-size: 12px;
-	background-position: 117px 5.5px;
-	opacity: 0.5;
-	transition: background-position 0.4s;
-	font-size: 13px;
-	min-width: 125px;
-}
-
-.search:focus {
-	background-position: 5px 5.5px;
-	transition: background-position 0.25s;
-}
-
-.search:focus::-webkit-input-placeholder {
-	padding-left: 0px;
-	transition: all 0.25s;
-}
-
-::-webkit-input-placeholder {
-	position: relative;
-	top: 2px;
-	opacity: 0.8;
-	color: black;
-	font-size: 13px;
-	padding-left: 110px;
-	transition: all 0.4s;
-}
-
 /* Table */
 
 .table {
@@ -684,7 +683,7 @@ body, html {
 	}
 
 	.search {
-		display: none;
+		display: none !important;
 	}
 }
 
