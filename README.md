@@ -40,7 +40,7 @@ Ion/
 
 #### Title Bar
 
-A title bar can either be normal or tall. Remove the `tall` class below to get a normal title bar. The title bar is used to drag the application.
+A title bar can either be normal, tall, inset, or all three combined. Remove the `tall` class below to get a normal inset title bar, Remove the inset to get a normal tall title bar. The title bar is used to drag the application.
 
 Inside the `bar` div, there are 3 other main elements:
 
@@ -49,7 +49,7 @@ Inside the `bar` div, there are 3 other main elements:
 - The `search` element, which is simply a search input
 
 ```
-<div class="bar tall">
+<div class="bar tall inset">
 	<div class="buttons">
 		<button></button>
 		<button></button>
@@ -61,11 +61,15 @@ Inside the `bar` div, there are 3 other main elements:
 ```
 
 <div style="text-align:center">
-	<img src ="https://i.imgur.com/XKTfhTB.png" alt="title-bar-tall">
+	<img src ="https://i.imgur.com/Yzi7y67.png" alt="title-bar-tall">
 </div>
 
 <div style="text-align:center">
-	<img src ="https://i.imgur.com/A85Qy3Q.png" alt="title-bar">
+	<img src ="https://i.imgur.com/GsrVdqw.png" alt="title-bar-tall">
+</div>
+
+<div style="text-align:center">
+	<img src ="https://i.imgur.com/277rgEp.png" alt="title-bar">
 </div>
 
 #### Buttons
@@ -77,6 +81,8 @@ The `bar-buttons` div, lets you add as many buttons as you want to the title bar
 The `bar-buttons` div also has `active` and `disabled` classes which make a button active or disabled.
 
 To have a space between buttons, simply add the `space` class to a button.
+
+To have a dropdown icon, add the `dropdown` class to a button.
 
 ```
 <div class="bar-buttons">
@@ -96,7 +102,7 @@ To have a space between buttons, simply add the `space` class to a button.
 	<img src ="https://i.imgur.com/qHThSeN.png" alt="bar-buttons">
 </div>
 
-You can also group buttons together, by putting them in a seperate `btn-group` class. 
+You can also group buttons together, by putting them in a `btn-group` class, which goes inside the `bar-buttons` class. 
 
 ```
 <div class="btn-group">
@@ -115,6 +121,37 @@ Once buttons are combined with the `tall` bar, you will see an output similar to
 
 <div style="text-align:center">
 	<img src ="https://i.imgur.com/dGTgqHj.png" alt="btn-group">
+</div>
+
+#### Tabs
+
+To get a tab interface, place the following `<div>` inside the `bar` class. To add more tabs, simply add another `<div>` with the class `tab` inside the `tabs` class.
+
+```
+<div class="tabs">
+	<div class="tab active">
+		<span class="close"></span>
+		Documents
+	</div>
+	<div class="tab">
+		<span class="close"></span>
+		Ion
+	</div>
+	<div class="tab">
+		<span class="close"></span>
+		School
+	</div>
+	<div class="tab">
+		<span class="close"></span>
+		Work
+	</div>
+	<div class="add">
+	</div>
+</div>
+```
+
+<div style="text-align:center">
+	<img src ="https://i.imgur.com/obT5oWI.png" alt="btn-group">
 </div>
 
 #### Sidebar
@@ -257,4 +294,22 @@ You can also have `disabled` rows, and `active` rows as shown below
 
 <div style="text-align:center">
 	<img src ="https://i.imgur.com/k84EVDw.png" alt="ion">
+</div>
+
+
+#### Path
+
+To get a breadcrumb style path at the bottom of the window, use a `<div>` with the class of `path`. This is shown below
+
+```
+<div class="path">
+	<span class="item laptop">Macintosh HD</span>
+	<span class="item folder">Users</span>
+	<span class="item home">Luka</span>
+	<span class="item documents">Documents</span>
+</div>
+```
+
+<div style="text-align:center">
+	<img src ="https://i.imgur.com/T4vxaCs.png" alt="ion">
 </div>
