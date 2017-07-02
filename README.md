@@ -48,7 +48,7 @@ Inside the `bar` div, there are 3 other main elements:
 - The `title` div, which is just the title of your application shown in the title bar
 - The `search` element, which is simply a search input
 
-```
+```html
 <div class="bar tall inset">
 	<div class="buttons">
 		<button></button>
@@ -84,7 +84,7 @@ To have a space between buttons, simply add the `space` class to a button.
 
 To have a dropdown icon, add the `dropdown` class to a button.
 
-```
+```html
 <div class="bar-buttons">
 	<button class="btn left-open-big"></button>
 	<button class="btn right-open-big"></button>
@@ -104,7 +104,7 @@ To have a dropdown icon, add the `dropdown` class to a button.
 
 You can also group buttons together, by putting them in a `btn-group` class, which goes inside the `bar-buttons` class. 
 
-```
+```html
 <div class="btn-group">
 	<button class="btn download"></button>
 	<button class="btn login"></button>
@@ -127,7 +127,7 @@ Once buttons are combined with the `tall` bar, you will see an output similar to
 
 To get a tab interface, place the following `<div>` inside the `bar` class. To add more tabs, simply add another `<div>` with the class `tab` inside the `tabs` class.
 
-```
+```html
 <div class="tabs">
 	<div class="tab active">
 		<span class="close"></span>
@@ -162,7 +162,7 @@ A `heading` div will put a heading above a bunch of items
 
 Each `item` div inside the `items` div, must have the class `item`, as well as another class that determines what icon is shown next to it. Below are all the possible items you can use (this includes coloured tags)
 
-```
+```html
 <div class="sidebar">
 	<div class="heading">
 		Favourites
@@ -257,7 +257,7 @@ A table can be displayed by using the HTML `table` element with the class `table
 
 You can also have `disabled` rows, and `active` rows as shown below
 
-```
+```html
 <table class="table alt">
 	<tr>
 		<th>Name</th>
@@ -301,7 +301,7 @@ You can also have `disabled` rows, and `active` rows as shown below
 
 To get a breadcrumb style path at the bottom of the window, use a `<div>` with the class of `path`. This is shown below
 
-```
+```html
 <div class="path">
 	<span class="item laptop">Macintosh HD</span>
 	<span class="item folder">Users</span>
@@ -316,7 +316,7 @@ To get a breadcrumb style path at the bottom of the window, use a `<div>` with t
 
 #### Full Page Example
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
