@@ -26,7 +26,7 @@ body, html {
 	width: 100%;
 	height: 22px;
 	border-bottom: 1px solid #CDCBCD;
-	background: -webkit-linear-gradient(#F5F4F5, #E4E2E4);
+	background: linear-gradient(#F5F4F5, #E4E2E4);
 	flex: 0 1 auto;
 	-webkit-app-region: drag;
 }
@@ -99,7 +99,6 @@ body, html {
 	margin-left: 8px;
 	position: relative;
 	top: 1px;
-	width: 56px;
 	z-index: 2;
 }
 
@@ -202,9 +201,8 @@ body, html {
 	height: 22px;
 	border: 0.25px solid #CFCECF;
 	border-radius: 5px;
-	background: -webkit-linear-gradient(#FDFDFD, #ECECEC) !important;
+	background: linear-gradient(#FDFDFD, #ECECEC) !important;
 	font-family: 'ion';
-	padding-top: 4px;
 	font-size: 13px;
 	margin: 0 2px;
 	color: #737373;
@@ -213,12 +211,12 @@ body, html {
 
 .btn:active {
 	color: #565656;
-	background: -webkit-linear-gradient(#E5E5E6, #D5D5D5) !important;
+	background: linear-gradient(#E5E5E6, #D5D5D5) !important;
 }
 
 .btn.active {
 	color: white;
-	background: -webkit-linear-gradient(#737273, #6C6B6C) !important;
+	background: linear-gradient(#737273, #6C6B6C) !important;
 	border: 0.25px solid #605F60 !important;
 }
 
@@ -227,7 +225,7 @@ body, html {
 }
 
 .btn.disabled:active {
-	background: -webkit-linear-gradient(#FDFDFD, #ECECEC) !important;
+	background: linear-gradient(#FDFDFD, #ECECEC) !important;
 }
 
 .btn.left-open-big, .btn.right-open-big {
@@ -248,7 +246,6 @@ body, html {
 	margin-left: 3px;
 	margin-right: -1.5px;
 	content: '\e83a';
-	float: right;
 }
 
 /* Button Group */
@@ -286,14 +283,14 @@ body, html {
 	display: flex;
 	-webkit-flex-direction: row;
 	border: 1px solid #B4B4B4;
-	background: -webkit-linear-gradient(#C2C1C2, #BDBBBD);
+	background: linear-gradient(#C2C1C2, #BDBBBD);
 	text-align: center;
 }
 
 .tab {
 	font-size: 11px;
 	flex-grow: 1;
-	background: -webkit-linear-gradient(#C2C1C2, #BDBBBD);
+	background: linear-gradient(#C2C1C2, #BDBBBD);
 	height: 20px;
 	padding-top: 4px;
 	border-right: 1px solid #9B9B9B;
@@ -353,11 +350,11 @@ body, html {
 }
 
 .tab:hover {
-	background: -webkit-linear-gradient(#B6B5B6, #B2B0B2);
+	background: linear-gradient(#B6B5B6, #B2B0B2);
 }
 
 .tab.active {
-	background: -webkit-linear-gradient(#DBD9DB, #D7D5D7);
+	background: linear-gradient(#DBD9DB, #D7D5D7);
 }
 
 /* Search */
@@ -630,7 +627,7 @@ body, html {
 	position: absolute;
 	bottom: 0;
 	margin-left: 141px;
-	background-color: -webkit-linear-gradient(#FDFDFD, #FFFFFF);
+	background-color: linear-gradient(#FDFDFD, #FFFFFF);
 	border-top: 1px solid #CCCCCC;
 	padding-left: 10px;
 }
