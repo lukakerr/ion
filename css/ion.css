@@ -434,6 +434,7 @@ body, html {
 	text-indent: 24px;
 	font-size: 13px;
 	background-position: 19px 3px;
+	position: relative;
 }
 
 .item:active {
@@ -501,10 +502,9 @@ body, html {
 }
 
 .item:before {
-	position: absolute;
-	margin-left: -49px;
-	margin-top: -20px;
-	margin-right: -4px;
+    position: absolute;
+    top: -12px;
+    left: -7px;
 	font-size: 40px;
 }
 
