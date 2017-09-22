@@ -649,7 +649,7 @@ body, html {
 	background-color: transparent !important;
 }
 
-.path span:after {
+.path span:not(:last-child):after {
 	font-family: Ion;
 	margin-left: 8px;
 	margin-right: -10px;

@@ -30,10 +30,10 @@ Ion/
         └── ...png
 ```
 
-### Screenshot
+### Demo
 
 <div style="text-align:center">
-	<img src ="https://i.imgur.com/LGtDmSf.png" alt="ion">
+	<img src="https://i.imgur.com/xfCOLmH.gif" alt="ion">
 </div>
 
 ### Documentation
