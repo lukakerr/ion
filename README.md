@@ -25,9 +25,9 @@ Ion/
 ├── fonts/
 │   └── ion.ttf
 └── img/
-		├── search.png
-		└── sidebar/
-				└── ...png
+    ├── search.png
+    └── sidebar/
+        └── ...png
 ```
 
 ### Demo
