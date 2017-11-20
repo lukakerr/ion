@@ -19,15 +19,14 @@ Ion is designed to be used specifically within an [Electron](https://github.com/
 Ion/
 ├── README.md
 ├── index.html
-├── css/
+├── dist/
+│   ├── ion.min.css
+│   └── fonts/
+│   └── img/
+├── src/
 │   ├── ion.css
-│   └── ion.min.css
-├── fonts/
-│   └── ion.ttf
-└── img/
-    ├── search.png
-    └── sidebar/
-        └── ...png
+│   └── fonts/
+│   └── img/
 ```
 
 ### Demo
@@ -322,7 +321,7 @@ To get a breadcrumb style path at the bottom of the window, use a `<div>` with t
 <head>
 
   <title>Ion</title>
-  <link href="css/ion.css" rel="stylesheet">
+  <link href="dist/ion.min.css" rel="stylesheet">
 
 </head>
 <body>
