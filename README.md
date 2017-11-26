@@ -4,19 +4,20 @@ A lightweight CSS framework that brings MacOS styled elements to Electron.
 
 ### About
 
-Ion was developed with the aim of bringing native MacOS elements and components, such as buttons, sidebars, search inputs, tables, icons, and toolbars, to HTML and CSS. 
+Ion was developed with the aim of bringing native MacOS elements and components, such as buttons, sidebars, search inputs, tabs, tables, icons, and toolbars, to HTML and CSS. 
 
 Ion is designed to be used specifically within an [Electron](https://github.com/electron/electron) application.
 
 ### Getting Started
 
-- Run `git clone https://github.com/LukaKerr/ion.git` to get the source code
-
+```
+git clone https://github.com/lukakerr/ion.git
+```
 
 ### Folder Structure
 
 ```
-Ion/
+ion/
 ├── README.md
 ├── index.html
 ├── dist/
@@ -35,17 +36,17 @@ Ion/
   <img src="https://i.imgur.com/xfCOLmH.gif" alt="ion">
 </div>
 
-### Documentation
+# Documentation
 
-#### Title Bar
+### Title Bar
 
-A title bar can either be normal, tall, inset, or all three combined. Remove the `tall` class below to get a normal inset title bar, Remove the inset to get a normal tall title bar. The title bar is used to drag the application.
+A title bar can either be `normal`, `tall`, `inset`, or all three combined. The title bar is used to drag the application.
 
 Inside the `bar` div, there are 3 other main elements:
 
-- The `buttons` div which is the red, yellow and green buttons in every application
-- The `title` div, which is just the title of your application shown in the title bar
-- The `search` element, which is simply a search input
+- The `buttons` div which is the traffic light buttons in every application
+- The `title` div, which is the title of your application shown in the title bar
+- The `search` element, which is the search input
 
 ```html
 <div class="bar tall inset">
@@ -59,23 +60,11 @@ Inside the `bar` div, there are 3 other main elements:
 </div>
 ```
 
-<div style="text-align:center">
-  <img src ="https://i.imgur.com/Yzi7y67.png" alt="title-bar-tall">
-</div>
-
-<div style="text-align:center">
-  <img src ="https://i.imgur.com/GsrVdqw.png" alt="title-bar-tall">
-</div>
-
-<div style="text-align:center">
-  <img src ="https://i.imgur.com/277rgEp.png" alt="title-bar">
-</div>
-
-#### Buttons
+### Buttons
 
 Buttons are commonly used in the `bar tall` div. Each button is located within a div with the class `bar-buttons`.
 
-The `bar-buttons` div, lets you add as many buttons as you want to the title bar. These buttons must have the `btn` class, as well as another class to show an icon. Note: the `left-open-big` and `right-open-big` are meant to go next to each other, as back and forward buttons.
+The `bar-buttons` div, lets you add as many buttons as you want to the title bar. These buttons must have the `btn` class, as well as another class to show an icon. Note: the `left-open-big` and `right-open-big` icons go next to each other, as back and forward buttons.
 
 The `bar-buttons` div also has `active` and `disabled` classes which make a button active or disabled.
 
@@ -97,10 +86,6 @@ To have a dropdown icon, add the `dropdown` class to a button.
 </div>
 ```
 
-<div style="text-align:center">
-  <img src ="https://i.imgur.com/qHThSeN.png" alt="bar-buttons">
-</div>
-
 You can also group buttons together, by putting them in a `btn-group` class, which goes inside the `bar-buttons` class. 
 
 ```html
@@ -112,17 +97,7 @@ You can also group buttons together, by putting them in a `btn-group` class, whi
 </div>
 ```
 
-<div style="text-align:center">
-  <img src ="https://i.imgur.com/zrksDFR.png" alt="btn-group">
-</div>
-
-Once buttons are combined with the `tall` bar, you will see an output similar to below.
-
-<div style="text-align:center">
-  <img src ="https://i.imgur.com/dGTgqHj.png" alt="btn-group">
-</div>
-
-#### Tabs
+### Tabs
 
 To get a tab interface, place the following `<div>` inside the `bar` class. To add more tabs, simply add another `<div>` with the class `tab` inside the `tabs` class.
 
@@ -149,11 +124,7 @@ To get a tab interface, place the following `<div>` inside the `bar` class. To a
 </div>
 ```
 
-<div style="text-align:center">
-  <img src ="https://i.imgur.com/obT5oWI.png" alt="btn-group">
-</div>
-
-#### Sidebar
+### Sidebar
 
 The `sidebar` div gets shown on the left side of the window. This is used to display a list of elements, similar to the Finder
 
@@ -246,11 +217,7 @@ Each `item` div inside the `items` div, must have the class `item`, as well as a
 </div>
 ```
 
-<div style="text-align:center">
-  <img src ="https://i.imgur.com/gfjOOXp.png" alt="ion">
-</div>
-
-#### Table
+### Table
 
 A table can be displayed by using the HTML `table` element with the class `table`. If you want each row to have alternating background colours, add the `alt` class as shown below.
 
@@ -291,12 +258,7 @@ You can also have `disabled` rows, and `active` rows as shown below
 </table>
 ```
 
-<div style="text-align:center">
-  <img src ="https://i.imgur.com/k84EVDw.png" alt="ion">
-</div>
-
-
-#### Path
+### Path
 
 To get a breadcrumb style path at the bottom of the window, use a `<div>` with the class of `path`. This is shown below
 
@@ -309,11 +271,7 @@ To get a breadcrumb style path at the bottom of the window, use a `<div>` with t
 </div>
 ```
 
-<div style="text-align:center">
-  <img src ="https://i.imgur.com/T4vxaCs.png" alt="ion">
-</div>
-
-#### Full Page Example
+### Full Page Example
 
 ```html
 <!DOCTYPE html>
